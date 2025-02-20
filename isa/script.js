@@ -36,6 +36,7 @@ event.target.parentElement.remove();
 const listItem = event.target.parentElement;
 const userData = listItem.textContent.split(" - ");
 nameInput.value = userData[0].trim();
+namepetInput.value = userData[0].trim();
 emailInput.value = userData[1].split(" ")[0].trim();
 listItem.remove();
 }
